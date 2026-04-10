@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Adicionar Transação</title>
+</head>
+
+<body>
+
+    <h1>Adicionar Transação</h1>
+
+    <form method="POST">
+
+        <input name="nome" placeholder="Nome da transação" required>
+        <br><br>
+
+        <input name="valor" placeholder="Valor" type="number" step="0.01" required>
+        <br><br>
+
+        <select name="tipo">
+            <option value="entrada">Entrada</option>
+            <option value="saida">Saída</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">Salvar</button>
+
+    </form>
+
+    <br>
+    <a href="/"><button>Voltar</button></a>
+
+</body>
+</html>

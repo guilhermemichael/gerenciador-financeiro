@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Transações</title>
+</head>
+
+<body>
+
+    <h1>Lista de Transações</h1>
+
+    <ul>
+        {% for t in transacoes %}
+            <li>
+                {{ t.nome }} - R$ {{ t.valor }} ({{ t.tipo }})
+            </li>
+        {% endfor %}
+    </ul>
+
+    <br>
+    <a href="/"><button>Voltar</button></a>
+
+</body>
+</html>
